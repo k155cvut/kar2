@@ -1,4 +1,6 @@
-# 155GIS1
+# 155KAT2
+
+# Toto je moc pěkná kartografie 2
 
 [Project Homepage](https://k155cvut.github.io/gis-1/)
 
