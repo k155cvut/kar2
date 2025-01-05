@@ -7,7 +7,7 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech [zde](http://giska.cz/kartografie/kartogramy-a-pseudokartogramy/){target="_blank" style=""}
  a [zde](https://www.dibavod.cz/data/gis_kartografie/kart_kartogramy_a_pseudokartogramy.pdf){target="_blank" style=""}
 
-<!–\*\**více informací o kartodiagramech se dozvíte na přednášce, nebo v materiálech* [zde](https://moodle-vyuka.cvut.cz/pluginfile.php/824551/mod_resource/content/0/kartodiagram_1.3.pdf){target="_blank"}–>
+<!--\*\**více informací o kartodiagramech se dozvíte na přednášce, nebo v materiálech* [zde](https://moodle-vyuka.cvut.cz/pluginfile.php/824551/mod_resource/content/0/kartodiagram_1.3.pdf){target="_blank"}-->
 
 
 
@@ -78,5 +78,5 @@ Pomocí Moodle **elektronicky** odevzdejte v **zazipovaném souboru**:
 
  **6× package pro všechny mapy či kompletní projekt** – APRX s GDB (se všemi použitými daty).
 
-<!-->
+<!--
 \*\*\**více informací o klasifikačních metodách se dozvíte na přednášce 16. října, nebo v materiálech* [zde](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/Metody%20klasifikace%20dat.pdf?time=1728417687788 "zde"){target="_blank"}\  -->
