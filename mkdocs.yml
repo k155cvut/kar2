@@ -1,22 +1,17 @@
-site_name: GIS 1 (155GIS1)
+site_name: Kartografie 2 (155KAT2)
 nav:
   - Charakteristika předmětu: index.md
-  - Cvičení:
-      - Úvod do práce v prostředí ArcGIS, prostorová data, datové zdroje, atributová tabulka: cviceni/cviceni1.md
-      - Vektorová data, atributové dotazy, prostorové dotazy: cviceni/cviceni2.md
-      - Prostorové funkce (geoprocessing), spatial join: cviceni/cviceni3.md
-      - Práce s externími daty (Excel, CSV), join: cviceni/cviceni4.md
-      - Rastrová data, georeferencování: cviceni/cviceni5.md
-      - Vektorizace, tvorba geodatabáze, kontrola topologie: cviceni/cviceni6.md
-      - ArcGIS Online, webové služby, připojení do ArcGIS Pro: cviceni/cviceni7.md
-      - Ukázky webové prezentace map, Experience Builder, Instant Apps, Dashboards: cviceni/cviceni8.md
-      - Volně dostupné GIS nástroje (QGIS): cviceni/cviceni9.md
-      - QGIS – online publikace dat: cviceni/cviceni10.md
+  - Cvičení – úlohy:
+      - I. Maloměřítková přehledná mapa: cviceni/Uloha1.md
+      - II. Plán města v kartografickém software OCAD: cviceni/Uloha2.md
+      - III. Metody tematické kartografie – kartogram, kartodiagram: cviceni/Uloha3.md
+      - IV. Tvorba mapy z dat ZABAGED, generalizace dat: cviceni/Uloha4.md
+      
   - Data: data.md
   # - Hodnocení: hodnoceni.md
-  - Semestrální práce: semestralka.md
+  # - Semestrální práce: semestralka.md
   # - Výuková videa: videa.md
-  - Kvíz: quiz.md
+  # - Kvíz: quiz.md
 plugins:
   - search
   - glightbox:
@@ -91,6 +86,7 @@ markdown_extensions:
   - footnotes
   - pymdownx.details
   - pymdownx.superfences
+#  - pymdownx.admonition
   - pymdownx.mark
   - pymdownx.emoji:
       emoji_index: !!python/name:materialx.emoji.twemoji

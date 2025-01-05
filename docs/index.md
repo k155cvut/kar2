@@ -1,11 +1,11 @@
 
-# GIS 1 {: .page_title}
+# Kartografie 2 {: .page_title}
 
-Předmět vás seznámí se základy tzv. __geografických informačních systémů__ (GIS). GIS je soubor nástrojů sloužících ke __sběru__, __správě__, __analýze__ a __vizualizaci__ geografických dat. Umožňuje efektivně pracovat s prostorovými informacemi, což zahrnuje __mapy__, __satelitní snímky__, __adresy__, __topografické údaje__ a mnoho dalšího. Dokáže provádět složité analýzy, identifikovat vzory, a tím __lépe porozumět geografickým jevům a vztahům__.
+Předmět naváže na základy matematického zobrazování do roviny a seznámí vás s __praktickou kartografií__, tedy primárně tvorbou mapových výstupů. Kartografie v moderním pojetí využívá poznatků GIS a umožňuje jimi zpracovaná data efektivně zobrazovat, syntetizovat a vytvářet odvozené výstupy.
 
-GIS má široké uplatnění, od __městského plánování__, přes __správu přírodních zdrojů__ až po __krizový management__. Je nepostradatelným nástrojem pro efektivní rozhodování a řízení v různých odvětvích a pomáhá lépe pochopit složité geografické souvislosti.
+Kartografie jako věda má široké uplatnění zejména v kombinaci s dalšími vědními obory jako je __urbanismus a plánování__, __demografie a statistika__, __environmentální vědy__, __ekonomie__, __krizové řízení__ apod., pro něž je cenným nástrojem pro efektivní předávání prostorových informací a zdrojem pochopení složitých geografických souvislostí.
 
-GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou základní teorií, cvičení se věnují praktickému ovládání GIS software – zejména porozumění práce s daty a provádění jednodušších analýz. Během výuky je používán software __:simple-arcgis: Esri ArcGIS Pro__{: style="white-space: nowrap;"}, ke konci kurzu bude pak věnován prostor i možným alternativám (program __:simple-qgis: QGIS__).
+Kartografie 2 je v tomto ohledu úvodním ze dvou kurzů. V magisterském studiu se navazuje Kartografií 3. Zatímco přednášky vás provedou základní teorií mapového jazyka a procesy vizualizace dat včetně exkurzu do historie a současnosti mapových děl na našem území a s nimi souvisejících tiskových technik, cvičení se věnují praktickému zvládnutí mapové tvorby – zejména porozumění práce s daty a korektní aplikace metod dle konvencí kartografické vizualizace. Během výuky je používán software __:simple-arcgis: ArcGIS Pro__{: style="white-space: nowrap;"}, možné je však pracovat i v alternativním (program __:simple-qgis: QGIS__{: style="white-space: nowrap;"}). Jedna úloha je zpracovávána pomocí software ![](assets/icon-ocad.png){: .off-glb .no-filter style="height: 1.2em; vertical-align: -.4em;"} __OCAD__{: style="white-space: nowrap;"}.
 
 <h2 style="text-align:center;">Naučíte se</h2>
 <!-- styl je zde pridany HTML tagem (ne pomoci '##'), aby se text neobjevil v tabulce obsahu vlevo na strance -->
@@ -14,19 +14,19 @@ GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou z
 
 -   :material-map-outline:{ .xl }
 
-    __zpracovávat__ a __analyzovat__ prostorová (tj. geografická, mapová) data
+    __analyzovat__ a __vizualizovat__ prostorová data
 
 -   :material-vector-polygon:{ .xl }
 
-    porozumět rozdílu mezi __vektorovými__ a __rastrovými__ daty
+    zobrazovat data v __různých souřadnicových systémech__
 
 -   :material-filter-outline:{ .xl }
 
-    __filtrovat__ data pomocí atributových a prostorových dotazů
+    __generalizovat__ mapu využitím konvenčních technik
 
 -   :material-tools:{ .xl }
 
-    aplikovat základní __prostorové funkce__ (nástroje geoprocessingu)
+    využívat __nástrojů GIS__ pro přípravu dat k vizualizaci
 
 -   :material-creation-outline:{ .xl }
 
@@ -62,32 +62,36 @@ GIS 1 je v tomto tématu úvodním kurzem. Zatímco přednášky vás provedou z
 ![](https://geo.fsv.cvut.cz/data/cehak/MkDocs/index/12.jpg){: .no-filter }
 </div>
 
-<!-- ## Doporučená literatura
+## Doporučená literatura
 
-1. Kolář, J.: Geografické informační systémy 10. Vydavatelství ČVUT, Praha 1998.
-2. Rapant, P. (2006): Geoinformatika a geoinformační technologie. VŠB-TU Ostrava, 500 str. ISBN 80-248-1264-9.
-3. Břehovský, M., Jedlička, K. (2005): Přednáškové texty pro Úvod do GIS. ZČU Plzeň, 116 s.
-4. Hrubý M.: Geografické Informační Systémy (GIS) - Studijní opora. VÚT v Brně, 91 str.
-5. Tuček J.: Geografické informační systémy, Praha Computer Press, 1998. -->
+1. Veverka B. & R. Zimová: Topografická a tematická kartografie. Vydavatelství ČVUT, Praha, 2008. ISBN: 80-01-02381-8.
+2. Voženílek, V. a kol.: Metody tematické kartografie - vizualizace prostorových jevů. Olomouc: Univerzita Palackého, 2011. ISBN: 978-80-244-2790-4.
+3. Slocum, T. A. et al.: Thematic Cartography and Geovisualization. Essex: Pearson Prentice Hall, 2009. ISBN: 978-01-322-9834-6.
+4. Bláha, J, D.: Vybrané okruhy z geografické kartografie. Ústí nad Labem: UJEP, 2017. ISBN: 978-80-7561-092-8.
+5. Brewer, C. A.: Designing better maps. Esri Press, 2005. ISBN: 978-15-894-8089-6.
+6. Kartografie – [e-learningový portál o tvorbě map](http://gis.fsv.cvut.cz/kartografie/).
 
 ## Přednášky {: style="margin-bottom:0;"}
 
 účast doporučená
 {: style="opacity:50%;margin-top:0;"}
 
-![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} 
-__prof. Ing. Lena Halounová, CSc.__
+<!--![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} -->
+__Ing. Tomáš Janata, Ph.D.__, __prof. Ing. Jiří Cajthaml, Ph.D.__
 
-1. Definice GIS, informatika, základní pojmy, aplikační oblasti GIS, prostor, topologie, historie GIS
-2. Reálný svět × GIS, model v GIS, vztahy objektů, typy modelů, geometrické typy objektů, rozlišovací schopnost
-3. Geografická poloha v GIS, prostorové vztahy, atributy
-4. Čas v GIS, modelování, druhy modelů, chyby v modelování v GIS
-5. Vektorový a rastrový GIS, datová struktura
-6. Rastrový GIS, atributová data
-7. Vektorový GIS, druhy objektů
-8. Geometrické a topologické vlastnosti objektů ve vektorovém GIS
-9. Vektorová a rastrová reprezentace prostorových objektů
-10. Rastrová reprezentace prostorových objektů, způsob ukládání rastrových objektů
+1. Kartografie jako věda, kartografická díla, vydavatelé, mapové sbírky.
+2. Jazyk mapy, písmo na mapách, geografické názvosloví.
+3. Obsahové prvky map, generalizace, znázornění reliéfu na mapách.
+4. Tematické mapy, metody tematického vyjadřování.
+5. Teorie barev, zásady používání barev na mapách.
+6. Historie kartografie s důrazem na první kartografické památky českých zemí. 
+7. Státní mapové dílo – civilní, ZABAGED; státní mapové dílo vojenské.
+8. Reprografie, barvové systémy, reprodukce barev.
+9. Techniky tisku historické a současné.
+10. Redakční práce, projekt kartografického díla, hodnocení mapových děl.
+11. Autorské právo v kartografii. Kartografické organizace, profesní spolky.
+12. Mezinárodní projekty v kartografii, webové mapy a atlasy.
+13. Webové služby, cloudová řešení, další vývoj digitální kartografie a publikace kartografických děl.
 
 ## Harmonogram {: style="margin-bottom:0;"}
 
@@ -96,7 +100,7 @@ __prof. Ing. Lena Halounová, CSc.__
 
 ---
 
-[Stránka předmětu v :custom-kos-logo-img-BW:{.middle style="margin-left:3px;"} :custom-kos-logo-BW:{.xl .middle}](https://kos.cvut.cz/course-syllabus/1551GIS/B232){ .md-button .md-button--primary target="_blank"}
+[Stránka předmětu v :custom-kos-logo-img-BW:{.middle style="margin-left:3px;"} :custom-kos-logo-BW:{.xl .middle}](https://kos.cvut.cz/course-syllabus/155KAT2/B241){ .md-button .md-button--primary target="_blank"}
 {align=center}
 
 <br>
