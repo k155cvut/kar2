@@ -65,7 +65,7 @@ Kartografie 2 je v tomto ohledu úvodním ze dvou kurzů. V magisterském studiu
 ## Doporučená literatura
 
 1. Veverka B. & R. Zimová: Topografická a tematická kartografie. Vydavatelství ČVUT, Praha, 2008. ISBN: 80-01-02381-8.
-2. Voženílek, V. a kol.: Metody tematické kartografie - vizualizace prostorových jevů. Olomouc: Univerzita Palackého, 2011. ISBN: 978-80-244-2790-4.
+2. Voženílek, V. a kol.: Metody tematické kartografie – vizualizace prostorových jevů. Olomouc: Univerzita Palackého, 2011. ISBN: 978-80-244-2790-4.
 3. Slocum, T. A. et al.: Thematic Cartography and Geovisualization. Essex: Pearson Prentice Hall, 2009. ISBN: 978-01-322-9834-6.
 4. Bláha, J, D.: Vybrané okruhy z geografické kartografie. Ústí nad Labem: UJEP, 2017. ISBN: 978-80-7561-092-8.
 5. Brewer, C. A.: Designing better maps. Esri Press, 2005. ISBN: 978-15-894-8089-6.
@@ -77,7 +77,7 @@ Kartografie 2 je v tomto ohledu úvodním ze dvou kurzů. V magisterském studiu
 {: style="opacity:50%;margin-top:0;"}
 
 <!--![](https://geomatics.fsv.cvut.cz/wp-content/uploads/2022/01/03-edit_export@0.5x-2.jpg){: .off-glb .no-filter style="height: 1.5em; vertical-align: -.4em; clip-path: circle();"} -->
-__Ing. Tomáš Janata, Ph.D.__, __prof. Ing. Jiří Cajthaml, Ph.D.__
+__Ing. Tomáš Janata, Ph.D.__ | __prof. Ing. Jiří Cajthaml, Ph.D.__
 
 1. Kartografie jako věda, kartografická díla, vydavatelé, mapové sbírky.
 2. Jazyk mapy, písmo na mapách, geografické názvosloví.
