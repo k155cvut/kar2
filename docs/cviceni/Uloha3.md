@@ -8,6 +8,11 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 
 1.  **Mapa 1** bude s využitím jednoduchého homogenního pseudokartogramu zobrazovat míru nezaměstnanosti v obcích ORP (dle individuálního zadání, viz níže)
 
+<figure markdown>
+  ![Mapa 3](../assets/Uloha3/mapa1.png "Mapa 2")
+  <figcaption>Mapa 1</figcaption>
+</figure>
+
 2.  **Mapa 2** bude s využitím jednoduchého klasifikačního pseudokartogramu zobrazovat míru nezaměstnanosti v obcích ORP (dle individuálního zadání, viz níže)
 
 3.  **Mapa 3** bude s využitím složeného pseudokartogramu (barva+barva) zobrazovat míru nezaměstnanosti a podíl obyvatel s VŠ vzděláním v obcích ORP (dle individuálního zadání, viz níže)
