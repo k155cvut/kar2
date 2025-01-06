@@ -11,7 +11,7 @@ nav:
   # - Hodnocení: hodnoceni.md
   # - Semestrální práce: semestralka.md
   # - Výuková videa: videa.md
-  # - Kvíz: quiz.md
+  - Kartogram: kartogram.md
 plugins:
   - search
   - glightbox:
