@@ -9,7 +9,7 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 1.  **Mapa 1** bude s využitím jednoduchého homogenního pseudokartogramu zobrazovat míru nezaměstnanosti v obcích ORP (dle individuálního zadání, viz níže)
 
 <figure markdown>
-  ![Mapa 3](../assets/Uloha3/mapa1.png "Mapa 2")
+  ![Mapa 1](../assets/Uloha3/mapa1.png "Mapa 1")
   <figcaption>Mapa 1</figcaption>
 </figure>
 
