@@ -8,9 +8,8 @@ nav:
       - IV. Tvorba mapy z dat ZABAGED, generalizace dat: cviceni/Uloha4.md
       
   - Data: data.md
-  # - Hodnocení: hodnoceni.md
-  # - Výuková videa: videa.md
   - Kartogram: kartogram.md
+  - Kartodiagram: kartodiagram.md
   - Klasifikace dat: klasifikace.md
   - Layout: layout.md
 plugins:

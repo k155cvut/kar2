@@ -22,13 +22,11 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 
 -   polygonová vrstva obcí a ORP z ArcČR 4.1 (dostupné na Shares\\K155\\Public\\155KAR2)
 
-**Postup:**
+**Postup:** (PJ)
 
 -   Mapa 1 + Mapa 2 – viz [návod](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/155KAT2_jednoduchy_kartogram.pdf "návod"){target="_blank"}
 -   Mapa 3 + Mapa 4 – viz [návod](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/155KAT2_slozeny_kartogram.pdf "návod"){target="_blank"}
 -   Mapa 5 + Mapa 6 – viz [návod](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/155KAT2_kartodiagram.pdf "návod"){target="_blank"}
--   [Tvorba layoutu](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/layout_.pdf "Tvorba layoutu"){target="_blank"}
--   Webový [nástroj](https://radiat.pythonanywhere.com/) pro tvorbu funkční stupnice\
 
 **Zadání:**  
 
@@ -46,11 +44,11 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 
     **– technickou zprávu, jež bude obsahovat**
 
-    -   vybrané statistiky o území *(počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)
+    -   vybrané statistiky o území (počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)
 
-    -   srovnání klasifikačních metod: Natural Breaks vs. Quantile vs. Equal Interval – která metoda je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen histogramu a vizualizace dat
+    -   srovnání klasifikačních metod (min. 4) která metoda je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen histogramu a vizualizace dat
 
-    -   zhodnocení použitých forem jednoduchého kartogramu: homogenní vs. klasifikační (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody.)
+    -   zhodnocení použitých forem jednoduchého kartogramu: homogenní vs. klasifikační. Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody.
     
     -   zhodnocení použitých forem složeného kartogramu: 1) barva+rastr (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Srovnejte: linie vs. tečky; hustota vs. velikost/tloušťka symbolu; přiložte printscreen všech 4 způsobů); 2) barva+rastr vs. barva+barva (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Který se lépe hodí pro kombinaci s kartodiagramem?)
 

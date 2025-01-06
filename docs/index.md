@@ -95,12 +95,4 @@ __Ing. Tomáš Janata, Ph.D.__ | __prof. Ing. Jiří Cajthaml, Ph.D.__
 
 ## Harmonogram {: style="margin-bottom:0;"}
 
-[![](./assets/index/schedule.svg#only-light){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
-[![](./assets/index/schedule_dark.svg#only-dark){.off-glb .no-filter}](https://kos.cvut.cz/schedule/course/1551GIS/semester/B232){target="_blank"}
-
----
-
-[Stránka předmětu v :custom-kos-logo-img-BW:{.middle style="margin-left:3px;"} :custom-kos-logo-BW:{.xl .middle}](https://kos.cvut.cz/course-syllabus/155KAT2/B241){ .md-button .md-button--primary target="_blank"}
-{align=center}
-
 <br>

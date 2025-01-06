@@ -1,7 +1,4 @@
 # Kartogram
-
-<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
-
 Podstatou kartogramu (*choropleth map*) je znázornění jevu vyjádřeného *relativními* hodnotami, zachyceného za dílčí územní celky. Pro správné srovnání je klíčové, aby data byla *relativní*, tj. v ideálním případě přepočtená na plochu územní jednotky (tzv. pravý kartogram), akceptovatelné je i přepočítání s využitím jiné charakteristiky územní jednotky, např. na počet obyvatel (tzv. nepravý kartogram). Častou a zásadní chybou je použití této kartografické vyjadřovací metody na absolutní data. (Lysák, 2014)
 
 ### Základní dělení kartogramů
@@ -19,6 +16,7 @@ Tvorba kartogramu zahrnuje tři hlavní úkoly:
 ### Grafický návrh znázornění intervalů v mapě
 
 #### Barevné stupnice
+/to-do: Miklín s. 107
 
 1.  Jednoduchý kartogram
     1.  *Homogenní*
