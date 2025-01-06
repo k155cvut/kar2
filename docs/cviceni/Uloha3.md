@@ -54,11 +54,19 @@ Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech
 
 !!! warning "K odevzdání"
     Pomocí Moodle **elektronicky** odevzdejte v **zazipovaném souboru**:
+
     **– technickou zprávu, jež bude obsahovat**
+
     -   vybrané statistiky o území *(počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)
+
     -   srovnání klasifikačních metod: Natural Breaks vs. Quantile vs. Equal Interval – která metoda je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen histogramu a vizualizace dat
+
     -   zhodnocení použitých forem jednoduchého kartogramu: homogenní vs. klasifikační (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody.)
+    
     -   zhodnocení použitých forem složeného kartogramu: 1) barva+rastr (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Srovnejte: linie vs. tečky; hustota vs. velikost/tloušťka symbolu; přiložte printscreen všech 4 způsobů); 2) barva+rastr vs. barva+barva (Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Který se lépe hodí pro kombinaci s kartodiagramem?)
+
     -   zhodnocení použitých forem kartodiagramu: *s*trukturní vs. složený součtový* *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody.)
+
     **- všechny vytvořené tematické mapy (Mapa 1–6)** (sloučit všechny mapy k TZ do jednoho PDF)
+    
     **– MPKX balíček**
