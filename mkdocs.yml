@@ -9,9 +9,10 @@ nav:
       
   - Data: data.md
   # - Hodnocení: hodnoceni.md
-  # - Semestrální práce: semestralka.md
   # - Výuková videa: videa.md
   - Kartogram: kartogram.md
+  - Klasifikace dat: klasifikace.md
+  - Layout: layout.md
 plugins:
   - search
   - glightbox:

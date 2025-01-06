@@ -2,11 +2,9 @@
 
 ## Zadání
 
-V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchého nepravého kartogramu (pseudokartogramu) - homogenní (Mapa 1) a kvalifikační/klasifikační (Mapa 2). V další části navážeme tvorbou složeného pseudokartogramu (Mapa 3 a Mapa 4), u něhož si představíme opět dvě formy znázornění (barva+barva vs. barva+rastr). Na závěr si ukážeme tvorbu strukturního a složeného kartodiagramu (Mapa 5 a Mapa 6). 
+V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchého nepravého kartogramu (pseudokartogramu) - homogenní (Mapa 1) a kvalifikační/klasifikační (Mapa 2). V další části navážeme tvorbou složeného pseudokartogramu (Mapa 3 a Mapa 4), u něhož si představíme opět dvě formy znázornění (barva+barva vs. barva+rastr). Na závěr si ukážeme tvorbu strukturního a složeného kartodiagramu (Mapa 5 a Mapa 6).
 
-Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech [zde](http://giska.cz/kartografie/kartogramy-a-pseudokartogramy/){target="_blank" style=""} a [zde](https://www.dibavod.cz/data/gis_kartografie/kart_kartogramy_a_pseudokartogramy.pdf){target="_blank" style=""}
-
-**S využitím software ArcGIS Pro vytvořte následující autorské koncepty tematické mapy na papír velikosti A3.**
+**S využitím software ArcGIS Pro vytvořte následující autorské koncepty tematické mapy na formát velikosti A3.**
 
 1.  **Mapa 1** bude s využitím jednoduchého homogenního pseudokartogramu zobrazovat míru nezaměstnanosti v obcích ORP (dle individuálního zadání, viz níže)
 
@@ -22,7 +20,7 @@ Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech
 
 **Zdroje dat:**
 
--   polygonová vrstva obcí a ORP z ArcČR 4.1 (dostupné na Shares\\K155\\Public\\155KAR2)\
+-   polygonová vrstva obcí a ORP z ArcČR 4.1 (dostupné na Shares\\K155\\Public\\155KAR2)
 
 **Postup:**
 
@@ -31,15 +29,6 @@ Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech
 -   Mapa 5 + Mapa 6 – viz [návod](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/155KAT2_kartodiagram.pdf "návod"){target="_blank"}
 -   [Tvorba layoutu](https://moodle-vyuka.cvut.cz/draftfile.php/12299/user/draft/752410911/layout_.pdf "Tvorba layoutu"){target="_blank"}
 -   Webový [nástroj](https://radiat.pythonanywhere.com/) pro tvorbu funkční stupnice\
-
-**Layout** (dodržujte [**zásady pro kompozici tematických map**](https://moodle-vyuka.cvut.cz/pluginfile.php/552270/mod_page/content/10/MAPK_kompozice_mapy.pdf){target="_blank" style=""})
-
--   název (co?, kde?, kdy?)
--   mapové pole
--   legenda (barevná stupnice, intervaly, diagramové měřítko)
--   grafické měřítko
--   směrovka
--   tiráž (jméno autora, předmět, datum vyhotovení, zdroj dat).
 
 **Zadání:**  
 
@@ -67,6 +56,6 @@ Více informací o kartogramech se dozvíte na přednášce, nebo v materiálech
 
     -   zhodnocení použitých forem kartodiagramu: *s*trukturní vs. složený součtový* *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody.)
 
-    **- všechny vytvořené tematické mapy (Mapa 1–6)** (sloučit všechny mapy k TZ do jednoho PDF)
+    **– všechny vytvořené tematické mapy (Mapa 1–6)** (sloučit všechny mapy k TZ do jednoho PDF)
     
     **– MPKX balíček**
