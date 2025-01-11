@@ -2,7 +2,7 @@
 
 ## Zadání
 
-V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchého nepravého kartogramu (pseudokartogramu) - homogenní (Mapa 1) a kvalifikační/klasifikační (Mapa 2). V další části navážeme tvorbou složeného pseudokartogramu (Mapa 3 a Mapa 4), u něhož si představíme opět dvě formy znázornění (barva+barva vs. barva+rastr). Na závěr si ukážeme tvorbu strukturního a složeného kartodiagramu (Mapa 5 a Mapa 6).
+V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchého nepravého kartogramu (pseudokartogramu) – homogenní (Mapa 1) a kvalifikační/klasifikační (Mapa 2). V další části navážeme tvorbou složeného pseudokartogramu (Mapa 3 a Mapa 4), u něhož si představíme opět dvě formy znázornění (barva+barva vs. barva+rastr). Na závěr si ukážeme tvorbu strukturního a složeného kartodiagramu (Mapa 5 a Mapa 6).
 
 **S využitím software ArcGIS Pro vytvořte následující autorské koncepty tematické mapy na formát velikosti A3.**
 

@@ -16,16 +16,22 @@ Tvorba kartogramu zahrnuje tři hlavní úkoly:
 ### Grafický návrh znázornění intervalů v mapě
 
 #### Barevné stupnice
-/to-do: Miklín s. 107
+Při výběru nebo tvorbě barevných stupnic pro tematické mapy jsou klíčová data, která mapa zobrazuje: barevné schéma by mělo odpovídat povaze dat. Barevná schémata v kartografii v základu rozdělujeme na binární, kvalitativní, sekvenční (unipolární) a divergentní (bipolární) viz schéma níže. Pro složitější data (s kombinací více proměnných) vytváříme složitější kombinovaná barevná schémata. (Miklín, 2017)
 
-1.  Jednoduchý kartogram
-    1.  *Homogenní*
-    2.  *Kvalifikační*
-3.  Složený kartogram
+<figure markdown>
+  ![Barevné stupnice](../assets/Uloha3/barvy.png "Barevné stupnice"){ width=1000px }
+  <figcaption>Barevné stupnice (Miklín, 2017)</figcaption>
+</figure>
 
 #### Rastrové stupnice
+Nejběžnějším způsobem vyjádřením kvantity rastrem je šrafování, příp. tečkování. Intenzita se znázorňuje dvěma způsoby:
 
-1.  Jednoduchý kartogram
-    1.  *Homogenní*
-    2.  *Kvalifikační*
-3.  Složený kartogram
+1.      zvyšováním hustoty čar (teček), přičemž tloušťka čar (velikost teček) zůstává stejná
+2.      zvětšováním tloušťky čar (velikosti teček), přičemž hustota čar (teček) zůstává stejná
+
+Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak nejvyšší.
+
+<figure markdown>
+  ![Rastrové stupnice](../assets/Uloha3/rastry.png "Rastrové stupnice"){ width=200px }
+  <figcaption>Nejjednodušší řešení rastru pro kartogram (Kaňok, Voženílek, 2011)</figcaption>
+</figure>
