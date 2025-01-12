@@ -1,7 +1,13 @@
 <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
 
-# Klasifikace dat (JM)
-Při klasifikaci vstupních dat (tvorbě intervalové stupnice) je třeba stanovit **počet intervalů a jejich meze** (hranice mezi intervaly).
+# Klasifikace dat
+**Data** z principu tvoří základ každé datové vizualizace. Bez nich či bez hlubšího porozumění datům, bez znalosti jejich původu či způsobu sběru, není možné správně pracovat. Dvě hlavní kategorie představují data **kvalitativní** a **kvantitativní**. Kvantitativní data lze měřit v číslech, např. vzdálenost, cena, čas. Kvalitativní data jsou vyjádřena nečíselnou informací (např. pohlaví nebo pocity obyvatel města).
+
+V rámci **kvalitativních dat** lze dále rozlišit **ordinální** a **nominální** (nemají vnitřní pořadí, např. druhy stromů). U ordinálních dat záleží na pořadí, ale rozdíly mezi hodnotami nejsou definovány, např. výzkum veřejného mínění s možnostmi: souhlasím – spíše souhlasím – nevím – spíše nesouhlasím – nesouhlasím. Pořadí je zřejmé, avšak nelze tvrdit, že rozdíl mezi prvními dvěma možnostmi je stejný jako mezi poslední dvojicí.
+
+**Kvantitativní data** mohou být **spojitá** (dále dělitelná, např. teplota) či **diskrétní** (celá čísla, nelze dělit, např. počet dětí). Spojitá data lze rozlišovat také dle toho, zda jsou měřena na **intervalové** či **poměrové** stupnici. U in**tervalových stupnic** je možné zjistit rozdíl, ale nikoliv podíl dvou hodnot, jelikož nulová hodnota je konvenční. Nelze se tedy ptát, kolikrát je jedna hodnota větší než druhá (např. teplota ve °C, nelze tvrdit, kolikrát tepleji bude zítra než dnes). U **poměrové stupnice** se nachází nulová hodnota na místě, které odpovídá absenci sledovaného znaku (např. váha).
+
+Při klasifikaci vstupních dat za účelem tvorby intervalové stupnice je třeba stanovit **počet intervalů a jejich meze** (hranice mezi intervaly).
 
 ## Stanovení počtu intervalů
 V kartografické literatuře (Voženílek, 2011) lze nalézt doporučené vzorce pro počet intervalů vycházející pouze z počtu územních jednotek viz níže (*m* znamená počet intervalů, *y* počet statistických jednotek v souboru).
