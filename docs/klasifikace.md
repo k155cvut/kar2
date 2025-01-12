@@ -18,10 +18,13 @@ $$
 V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená velmi hrubou informaci o rozložení jevu v území, velké množství naopak činí mapu nepřehlednou, zejména z toho důvodu, že je pak pro čtenáře mapy obtížné rozlišit jednotlivé kategorie, mezi jejichž barvou či rastrem jsou pak jen velmi nepatrné rozdíly. (Lysák, 2014)
 
 ## Klasifikační metody
+V praxi se obvykle využívá některého z klasifikačních algoritmů, které jsou v ArcGIS Pro implementovány a výsledek automatického zpracování se následně ručně upraví. Je proto vhodné rozumět tomu, jak jednotlivé algoritmy pracují. (Lysák, 2014)
 
 ### Neklasifikovaná data
 
-**Popis**: Každá jednotka (např. okres) je zobrazena unikátní barvou podle přesné hodnoty.
+**Popis**:
+
+Každá jednotka (např. okres) je zobrazena unikátní barvou podle přesné hodnoty.
 
 **Výhody**:
 
@@ -33,9 +36,17 @@ V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená vel
 -   Mapa může být složitá a obtížně čitelná pro uživatele.
 -   Legenda nemusí být intuitivní.
 
-### Rovnoměrné intervaly *(Equal Interval)*
+### Manual
 
-**Popis**: Data jsou rozdělena do stejně širokých intervalů (např. 0–10, 10–20).
+**Popis**:
+
+Manuálně vymezené intervaly představují ruční klasifikaci, při které tvůrce mapy nastaví hranice intervalů dle analýzy dat a vlastního uvážení.
+
+### Equal Interval
+
+**Popis**:
+
+Data jsou rozdělena do stejně širokých intervalů (např. 0–10, 10–20). Algoritmus v datech nejprve nalezne minimum a maximum a poté rozdělí rozpětí mezi těmito hodnotami do stejně velkých intervalů.
 
 **Výhody**:
 
@@ -48,11 +59,17 @@ V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená vel
 -   Odlehlé hodnoty mohou narušit vizuální přehlednost.
 -   Ztráta detailů u nerovnoměrně rozložených dat.
 
-**Použití**: Pro normálně rozložená data.
+### Defined Interval
 
-### Směrodatná odchylka *(Standard Deviation)*
+**Popis**:
 
-**Popis**: Intervaly jsou určeny na základě průměru a směrodatných odchylek.
+Zatímco v předchozím případě jsme zadávali počet intervalů a program dopočítával jejich šířku, zde zadáváme šířku intervalu a počet je závislý na tom, kolikrát se zadaný interval vejde mezi minimum a maximum.
+
+### Standard Deviation
+
+**Popis**:
+
+Intervaly jsou určeny na základě průměru a směrodatných odchylek. Tento algoritmus je mimochodem do značné míry podobný *Defined Intervals*. Oba algoritmy dělí data do intervalů o zadané velikosti, ale v případě *Standard Deviation* nevolíme velikost intervalů libovolně, ale vybíráme z násobků směrodatné odchylky vypočtené z klasifikovaných dat.
 
 **Výhody**:
 
@@ -64,11 +81,11 @@ V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená vel
 -   Složitější legenda pro uživatele.
 -   Může být matoucí pro neodborné publikum.
 
-**Použití**: Pro normální nebo šikmá data, pokud je důležité ukázat odchylky od průměru.
+### Quantile
 
-### Kvantily *(Quantile)*
+**Popis**:
 
-**Popis**: Každá kategorie obsahuje stejný počet jednotek (např. stejné množství okresů v každé kategorii).
+Každá kategorie obsahuje stejný počet jednotek (např. stejné množství okresů v každé kategorii).
 
 **Výhody**:
 
@@ -81,11 +98,11 @@ V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená vel
 -   Potenciál pro matení uživatele (nerovnoměrné intervaly).
 -   Je nutné jasně a přesně popsat legendu.
 
-**Použití**: Pro data, kde je cílem zdůraznit nuance bez ohledu na rozložení dat.
+### Jenks Natural Breaks
 
-### Metoda přirozených zlomů *(Jenks Natural Breaks)*
+**Popis**:
 
-**Popis**: Algoritmus automaticky hledá přirozené zlomy v datech a určuje intervaly.
+Algoritmus (*metoda přirozených zlomů*) automaticky hledá přirozené zlomy v datech a určuje intervaly.
 
 **Výhody**:
 
@@ -98,9 +115,7 @@ V praxi se doporučuje použít 4–10 intervalů. Malé množství znamená vel
 -   Může být obtížné interpretovat legendu.
 -   Výsledek závisí na algoritmu, ne na uživateli.
 
-**Použití**: Pokud chcete algoritmu důvěřovat v hledání optimálních bodů.
-
-### Shrnutí metod
+### Shrnutí vybraných metod
 
 | **Metoda**         | **Výhody**                         | **Nevýhody**                     | **Vhodné pro...**            |
 |--------------------|------------------------------------|----------------------------------|------------------------------|
