@@ -63,4 +63,4 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
     </figure>
     
       - **rastrová stupnice:**
-          - tvorba rastrové stupnice 
+          - tvorba rastrové stupnice
