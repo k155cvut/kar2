@@ -4,7 +4,7 @@ Podstatou kartogramu (*choropleth map*) je znázornění jevu vyjádřeného *re
 ### Základní dělení kartogramů
 1.  *Jednoduchý kartogram* 
     1.  *Homogenní kartogram* zobrazuje pouze jeden relativní jev, a to změnou barvy nebo rastru
-    2.  *Kvalifikační kartogram* znázorňuje rozdíl jevu od zvolené střední hodnoty S, pro oblasti s hodnotou jevu větší než S se volí odstíny barvy opačného charakteru než pro jevy s hodnotu menší než S.
+    2.  *Kvalifikační kartogram* znázorňuje rozdíl jevu od zvolené střední hodnoty S (např. průměr, medián, směrodatná odchylka, nula/, nulová změna, ...). Pro oblasti s hodnotou jevu větší než S se volí odstíny barvy opačného charakteru než pro jevy s hodnotu menší než S. 
 2.  *Složený kartogram* zobrazuje hodnoty dvou nebo více jevů, umožňuje jejich vzájemné srovnání, typicky je jeden jev vyjádřen barvou, druhý rastrem
 
 Tvorba kartogramu zahrnuje tři hlavní úkoly:
@@ -44,23 +44,48 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
     - zvolíme vhodnou metodu vizualizace pro kvantitativní data odpovídající definici kartogramu *--> Primary symbology-Graduated Colors*
     - zvolíme data, která chceme vizualizovat (*Field*) 
     - prozkoumáme statistické rozdělení dat prostřednictvím histogramu *(Symbology-Histogram)*
-    - zvolíme vhodný klasifikační algoritmus  *(Method)* a počet intervalů *(Classes)*
+    - zvolíme vhodný klasifikační algoritmus *(Method)* a počet intervalů *(Classes)*
     - v případě potřeby výslednou klasifikaci dodatečně manuálně upravíme (např. zaokrouhlení hraničních hodnot)
 
     <figure markdown>
-     ![Kartogram - klasifikace dat v ArcGIS Pro](../assets/Uloha3/kartogram_symbology_klasifikace.png "Kartogram - klasifikace dat v ArcGIS Pro"){ width=300px }
-    <figcaption>Kartogram - klasifikace dat v ArcGIS Pro</figcaption>
+     ![Homogenní kartogram - klasifikace dat v ArcGIS Pro](../assets/Uloha3/kartogram_symbology_klasifikace.png "Homogenní kartogram - klasifikace dat v ArcGIS Pro"){ width=400px }
+    <figcaption>Homogenní kartogram - klasifikace dat v ArcGIS Pro</figcaption>
     </figure>
+
+    ???+ note "Klasifikační kartogram"
+        - zjistíme střední hodnotu zobrazovaného jevu *(More-Show statistics)*, kterou můžeme zahrnout do samostatného intervalu (lichý počet intervalů) nebo ji využít jako mezní hodnotu oddělující intervaly nad/pod zvolenou hodnotou (sudý počet intervalů)
+        <figure markdown>
+        ![Kvalifikační kartogram - klasifikace dat v ArcGIS Pro](../assets/Uloha3/kartogram_symbology_klasifikace_kvalifikacni_typy.png "Kvalifikační kartogram - klasifikace dat v ArcGIS Pro"){ width=800px }
+        <figcaption>Kvalifikační kartogram - klasifikace dat v ArcGIS Pro</figcaption>
+        </figure>
+
 
     **Vizualizace dat**
     
       - **barevná stupnice:** 
-          - barvu lze postupně definovat pro jednotlivé intervaly *(Classes-Symbol)* či zvolit jednu z předdefinovaných barevných stupnic *(Color scheme)*, které je možné dodatečně formátovat *(Format color scheme)*, což se hodí například pro tvorbu divergentní barevné stupnice, která není v nabídce barevných stupnic defaultně dostupná
+          - barvu můžeme postupně definovat pro jednotlivé intervaly *(Classes-Symbol)* či si zvolit jednu z předdefinovaných barevných stupnic *(Color scheme)*, které je možné dodatečně formátovat *(Format color scheme)*, což se hodí například pro tvorbu divergentní barevné stupnice, která není v nabídce barevných stupnic defaultně dostupná
       
       <figure markdown>
-     ![Barevná stupnice](../assets/Uloha3/kartogram_symbology_barvy1.png "Barevné stupnice v  ArcGIS Pro""){ width=400px }
+     ![Barevná stupnice](../assets/Uloha3/kartogram_symbology_barvy1.png "Barevné stupnice v  ArcGIS Pro"){ width=400px }
     <figcaption>Barevné stupnice v  ArcGIS Pro</figcaption>
     </figure>
     
       - **rastrová stupnice:**
-          - tvorba rastrové stupnice
+          - rastr musíme definovat manuálně pro jednotlivé intervaly *(Classes-Symbol)* (sw neumí automaticky generovat rastrové stupnice)
+          - ve vlastnostech symbolu *(Properties-Layers)* je nutné změnit typ výplně na *Hatched fill* a vhodně nastavit vybrané parametry rastru, jako např. barvu linie *(Color)*, tloušťku linie *(Line width)*, sklon *(Angle)*, rozestup *(Separation)*
+          
+      <figure markdown>
+      ![Nastavení rastrové výplně ve vlastnostech symbolu](../assets/Uloha3/kartogram_rastr_symbol_hatched.png "Nastavení rastrové výplně ve vlastnostech symbolu"){ width=400px }
+      <figcaption>Nastavení rastrové výplně ve vlastnostech symbolu</figcaption>
+      </figure>
+
+    ???+ tip "Uložení vlastního symbolu"
+        - pro usnadnění práce je vhodné symbol se základním nastavením uložit do stylu *(horní menu-Save symbol to style)* a následně jej aplikovat pro všechny ostatní intervaly (v *Symbology-Classes* zvolte *More-Format all symbols*, poté příslušný symbol vyberte z galerie symbolů *(Gallery)*)
+        - u dalších interval již postačí nastavit jen vhodnou hodnotu tloušťku linii *(Line width)* či jejich rozestupu *(Separation)* tak, aby s narůstající intenzitou jevu narůstala hustota rastru (v závislosti na zvoleném způsobu vykreslení rastru)
+    ???+ tip "Vícesměrný rastr"    
+        - narůstající hustotu můžeme vyjádřit i s využitím vícesměrného rastru (dva na sebe kolmé jednosměrné rastry)
+        - ve vlastnostech symbolu *(Properties-Structure)* duplikujeme vrstvu výplně symbolu, pro kterou v části *(Properties-Layers)* nastavíme hodnotu rozestupu *(Separation)* tak, aby na sebe oba jednosměrně rastry byly kolmé (nejčastěji volíme sklonitost 45° a 135°)
+        <figure markdown>
+        ![Přidání vrstvy symbolu](../assets/Uloha3/kartogram_rastr_symbol_structure.png "Přidání vrstvy symbolu"){ width=150px }
+        <figcaption>Přidání vrstvy symbolu</figcaption>
+        </figure>
