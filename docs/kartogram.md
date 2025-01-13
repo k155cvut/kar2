@@ -37,9 +37,9 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
   <figcaption>Nejjednodušší řešení rastru pro kartogram (Kaňok, Voženílek, 2011)</figcaption>
 </figure>
 
-!!! note "Jak na kartogram v ArcGIS Pro"
+!!! note "Jednoduchý kartogram v ArcGIS Pro"
 
-    **1.      Rozdělení dat do intervalů**
+    **Rozdělení dat do intervalů**
     
     - zvolíme vhodnou metodu vizualizace pro kvantitativní data odpovídající definici kartogramu *--> Primary symbology-Graduated Colors*
     - zvolíme data, která chceme vizualizovat (*Field*) 
@@ -52,4 +52,15 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
     <figcaption>Kartogram - klasifikace dat v ArcGIS Pro</figcaption>
     </figure>
 
-    **2.      Vizualizace dat**
+    **Vizualizace dat**
+    
+      - **barevná stupnice:** 
+          - barvu lze postupně definovat pro jednotlivé intervaly *(Classes-Symbol)* či zvolit jednu z předdefinovaných barevných stupnic *(Color scheme)*, které je možné dodatečně formátovat *(Format color scheme)*, což se hodí například pro tvorbu divergentní barevné stupnice, která není v nabídce barevných stupnic defaultně dostupná
+      
+      <figure markdown>
+     ![Barevná stupnice](../assets/Uloha3/kartogram_symbology_barvy1.png "Barevné stupnice v  ArcGIS Pro""){ width=400px }
+    <figcaption>Barevné stupnice v  ArcGIS Pro</figcaption>
+    </figure>
+    
+      - **rastrová stupnice:**
+          - tvorba rastrové stupnice 
