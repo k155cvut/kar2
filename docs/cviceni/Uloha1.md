@@ -25,11 +25,7 @@ Mapu s potlačeným výškopisným hypsometrickým podkladem a správním člen�
 
 Popisy lze vytvořit následujícím způsobem. Chcete-li zapnout popis pro vrstvu, v jejím kontextovém menu aktivujte *Label features*. Nahoře a vpravo se zpřístupní panely *Label properties*, které obsahují funkce pro generování a úpravu popisů.
 
-Pro jednotlivé třídy popisu si nastavte, z jakého atributu se popis vyčítá, vlastnosti písma (tlačítko *Symbol*) a umisťování popisů (tlačítko *Placement properties*). Také zkontrolujte, že máte na záložce *General* v nastavení výkresu definováno ref. měřítko dle skutečného měřítka své mapy.
-
-Takto vytvořený popis je *dynamický* – překresluje se při každém pohybu mapou. Trvalý popis ve formě třídy prvků z něj vytvoříte převedením do tzv. anotací pomocí volby *Convert labels to annotation* v kontextovém menu třídy prvků. Pozor ovšem – u vytvořené anotační třídy již nelze měnit font, barvu apod. Ovšem lze tuto třídu editovat jako jakoukoli jinou vrstvu a případně upravovat jednotlivé anotace, otáčet je, přesouvat, mazat apod.
-
-Pozor na kolize anotací navzájem, kolize s mapovým rámem nebo s černými prvky v mapě atd. – popis by vždy měl být čitelný, nekolidovat s dalšími objekty mapy, nepřekážet.
+Podrobnější návod k vytvoření popisu je na [samostatné záložce](../popisy.md) nahoře. Pozor na kolize anotací navzájem, kolize s mapovým rámem nebo s černými prvky v mapě atd. – popis by vždy měl být čitelný, nekolidovat s dalšími objekty mapy, nepřekážet.
 
 Mapu je potřeba nakonec **doplnit o kompoziční prvky** (výklad k nim viz přednáška). Existují čtyři základní kompoziční prvky (mimo mapového pole), jež musí mapa vždy obsahovat – název mapy, měřítko, legenda a tiráž. Ostatní jsou nepovinné (včetně směrovky – pokud je mapa orientována k severu, směrovka je nadbytečná). V souvislosti s tímto apeluji nepoužívat pro mapy obdobné jako v této úloze Křovákovo zobrazení, resp. systém JTSK. Ten je vytvořen pro specifické katastrální účely a pro SMD, ve svém případě použijte spíše UTM či ETRS89 (oboje v zóně 33 – EPSG kód 326333 pro UTM nebo 3045 pro ETRS89) nebo některé  kuželové zobrazení (např. Lambertovo, Albersovo, kde upravíte střední poledník tak, aby procházel zhruba Vaším územím; v tomto viz KAR1).
 
@@ -62,13 +58,13 @@ Vytištěnou mapu na formát A3 přiložte k technické zprávě. **Dbejte na kv
 
 !!! warning "K odevzdání"
 
-#### **Technická zpráva bude obsahovat:**
+    #### **Technická zpráva bude obsahovat:**
 
--   číslo zadání;
--   název zadané ORP;
--   stručně postup a použitá data;
--   jako přílohu vyhotovenou mapu;
--   dále závěr – s uvedením vlastního zhodnocení práce s informačními a výpočetními zdroji;
--   bibliografické odkazy na použitou literaturu a zdroje, zpracované podle normy pro bibliografické citace (ČSN ISO 690, ČSN ISO 690-2).
+    -   číslo zadání;
+    -   název zadané ORP;
+    -   stručně postup a použitá data;
+    -   jako přílohu vyhotovenou mapu;
+    -   dále závěr – s uvedením vlastního zhodnocení práce s informačními a výpočetními zdroji;
+    -   bibliografické odkazy na použitou literaturu a zdroje, zpracované podle normy pro bibliografické citace (ČSN ISO 690, ČSN ISO 690-2).
 
-Technickou zprávu je třeba v požadovaném termínu nahrát do Moodlu (PDF) a v tištěné podobě odevzdat vyučujícímu.
+    Technickou zprávu je třeba v požadovaném termínu nahrát do Moodlu (PDF) a v tištěné podobě odevzdat vyučujícímu.

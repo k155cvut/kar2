@@ -52,7 +52,7 @@ Informace o struktuře dat ZABAGED, jednotlivých atributech apod. naleznete v 
 V rámci úlohy si vyzkoušíme některé **generalizační algoritmy**. Máte dodána data pro měřítko 5 tisíc (i teoreticky větší), ale vytváříte mapu měřítka menšího. Je tedy vhodné:
 
 -   aplikovat cenzální výběr na vodní toky a drobné komunikace, příp. některé bodové vrstvy, např. kóty, dále pominout objekty plošně natolik malé, že nebude možné je v měřítku vhodně zobrazit;
--   zblokovat budovy do ploch intravilánů pomocí funkce Aggregate Polygons nebo Delineate Built-Up Areas;
+-   zblokovat budovy do ploch intravilánů pomocí funkce *Aggregate Polygons* nebo *Delineate Built-Up Areas*;
 -   příp. použít další vhodné algoritmy dle ukázky na cvičení.
 
 Není třeba využít všech vrstev ZABAGED (mnohé mohou být po ořezu i prázdné) – uvažte, co má s ohledem na měřítko smysl.
@@ -60,15 +60,11 @@ Není třeba využít všech vrstev ZABAGED (mnohé mohou být po ořezu i práz
 
 ### GENEROVÁNÍ POPISŮ
 
-K mapě s hotovým polohopisem v závěru připojte popis. Mnoho objektů ZABAGED obsahuje atribut *JMENO*, který obsahuje text pro vytvoření popisů. Je také vhodné využít datové sady GeoNames.
+K mapě s hotovým polohopisem v závěru připojte popis. Mnoho objektů ZABAGED obsahuje atribut *JMENO*, který obsahuje text pro vytvoření popisů. Je také vhodné využít datové sady GeoNames, protože objekty jako sídla, pomístní názvy, orografické celky atp. své názvy v ZABAGED nemají, protože v ZABAGED není odpovídající datová vrstva.
 
 Podobně jako při symbolizaci polohopisu, také texty by měly mít různý charakter (font, řez, velikost, barvu) na základě prvků, které popisují. Klasifikaci GeoNames proveďte podle typů objektů. Vytvoříte-li v tabulce obsahu kategorie, lze je pak převzít na kartě Labels pro vytvoření tříd popisu. 
 
-Chcete-li zapnout popis pro vrstvu, v jejím kontextovém menu aktivujte *Label features*. Napřed na kartě Labels přepněte nahoře na *Define classes of features* a pak pomocí tlačítka *Get symbol classes* převezměte předtím vytvořenou kategorizaci. Případnou hodnotu *<All other\>* vymažte. Např. pro vodní toky není vhodné použít GeoNames, protože u linií je lepší popisy generovat nikoli z GeoNames, ale přímo nad touto vrstvou ze ZABAGED.
-
-Pro jednotlivé třídy popisu si nastavte vlastnosti písma (tlačítko *Symbol*) a umisťování popisů (tlačítko *Placement properties*). Je nutné mít aktivovaný Maplex Label Engine ve vlastnostech výkresu, karta General – umožňuje kartograficky lepší popisy. Zde také zkontrolujte nastavení ref. měřítka 1 : 25 000.
-
-Takto vytvořený popis je *dynamický* – překresluje se při každém pohybu mapou. Trvalý popis ve formě třídy prvků z něj vytvoříte převedením do tzv. anotací pomocí volby *Convert labels to annotation* v kontextovém menu třídy prvků. Pozor ovšem – u vytvořené anotační třídy již nelze měnit font, barvu apod. Ovšem lze tuto třídu editovat jako jakoukoli jinou vrstvu a případně upravovat jednotlivé anotace, otáčet je, mazat apod.
+Podrobnější návod k vytvoření popisu je na [samostatné záložce](../popisy.md) nahoře.
 
 Pozor na kolize anotací navzájem, kolize s mapovým rámem nebo s černými prvky v mapě atd.
 
@@ -86,9 +82,9 @@ Tiráž ani legendu vytvářet nebudete. Ověřte si, že exportujete skutečně
 
 !!! warning "K odevzdání"
 
-**Mapa vytvořená z vektorových dat ZABAGED (formát PDF)** plus všechna zdrojová dat ve formě MPKX balíčku. Odevzdává se prostřednictvím Moodle. Soubory k odevzdání (do jednoho archívu):
+    **Mapa vytvořená z vektorových dat ZABAGED (formát PDF)** plus všechna zdrojová dat ve formě MPKX balíčku. Odevzdává se prostřednictvím Moodle. Soubory k odevzdání (do jednoho archívu):
 
--   MPKX soubor,
--   PDF export s mapovým obrazem.
+    -   MPKX soubor,
+    -   PDF export s mapovým obrazem.
 
-Technickou zprávu není nutné zpracovat.
+    Technickou zprávu není nutné zpracovat.

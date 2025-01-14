@@ -52,7 +52,7 @@ Arcade je skriptovací jazyk, který se používá v ArcGIS Pro pro tvorbu dynam
 Lišta **Labeling** poskytuje rychlý přístup k základním nastavením popisů:
 
 *   **Zapnutí/vypnutí popisů:** První ikona slouží k aktivaci a deaktivaci popisů pro vybranou vrstvu.
-*   **Základní symbologie:** Nastavení barvy a velikosti písma.
+*   **Základní symbolika:** Nastavení barvy a velikosti písma.
 *   **Efekt halo:** Přidání obrysu (jinak též halo, framing) kolem textu pro zlepšení čitelnosti.
 *   **Pozice popisů:** Základní možnosti umístění popisů.
 
@@ -60,7 +60,7 @@ Lišta **Labeling** poskytuje rychlý přístup k základním nastavením popis�
 
 Panel **Placement Properties** (dostupný v okně **Label Class**) nabízí detailní nastavení umístění popisů:
 
-*   **Labeling Engine:** Výběr mezi **Standard Label Engine** (základní algoritmy) a **Maplex Label Engine** (pokročilé algoritmy pro husté popisování a liniové prvky). *Maplex* se doporučuje vždy.
+*   **Labeling Engine:** Výběr mezi **Standard Label Engine** (základní algoritmy) a **Maplex Label Engine** (pokročilé algoritmy pro husté popisování a liniové prvky). *Maplex* se doporučuje vždy a od verze ArcGIS Pro 3.2 je k dispozici již jen tento engine.
 
 *   **Placement:** Nastavení umístění popisů vzhledem k prvkům (např. nad, pod, vedle, uvnitř polygonu).
 

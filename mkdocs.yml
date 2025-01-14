@@ -11,7 +11,7 @@ nav:
   - Kartogram: kartogram.md
   - <!--Kartodiagram-->: kartodiagram.md
   - Klasifikace dat: klasifikace.md
-  - Popis dat: popisy.md
+  - Popis prvků: popisy.md
   - Layout: layout.md
 plugins:
   - search

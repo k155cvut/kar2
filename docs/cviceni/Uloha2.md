@@ -19,7 +19,7 @@ Jako podklad mpžete využít také WMS službu ZTM5 na adrese [https://ags.cuzk
 
 !!! tip "Vybírat můžete obecně z měst nad 5 tisíc obyvatel, např. z přehledu níže"
 
-<style>
+    <style>
         .city-columns {
             display: flex;
             flex-wrap: wrap;
@@ -40,9 +40,9 @@ Jako podklad mpžete využít také WMS službu ZTM5 na adrese [https://ags.cuzk
             padding: 0;
             margin: 0;
         }
-</style>
+    </style>
 
-<div class="city-columns">
+    <div class="city-columns">
     <div class="city-column">
         <ul>
             <li>Aš</li>
@@ -237,14 +237,14 @@ V krátkosti další postup možného zpracování úlohy pro ty, kteří nestih
 
 !!! warning "K odevzdání"
 
-#### **Požadované výstupy:**
+    ### **Požadované výstupy:**
 
--   **Mapový soubor OCD** se zpracovanou kresbou plánu v elektronické formě v systému Moodle – jako OCD soubor s názvem cislozadani_prijmeni.ocd;
--   **Vytištěný plán** v měřítku 1 : 10 000 na papír A4 jako součást technické zprávy.
+    -   **Mapový soubor OCD** se zpracovanou kresbou plánu v elektronické formě v systému Moodle – jako OCD soubor s názvem cislozadani_prijmeni.ocd;
+    -   **Vytištěný plán** v měřítku 1 : 10 000 na papír A4 jako součást technické zprávy.
 
-**Technická zpráva** bude obsahovat:
+    **Technická zpráva** bude obsahovat:
 
--   číslo zadání, zvolené město;
--   stručně údaje o hlavních bodech postupu;
--   přehled výstupů: název výsledného souboru + vytištěný plán 1 : 10 000;
--   shrnutí, vlastní zkušenosti/problémy, názory.
+    -   číslo zadání, zvolené město;
+    -   stručně údaje o hlavních bodech postupu;
+    -   výstupy – název výsledného souboru + vytištěný plán 1 : 10 000;
+    -   shrnutí, vlastní zkušenosti/problémy, názory.
