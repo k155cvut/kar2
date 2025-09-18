@@ -211,15 +211,48 @@ Jako podklad mpžete využít také WMS službu ZTM5 na adrese [https://ags.cuzk
 
 !!! tip "Mnoho užitečných informací k OCADu a kartografii jako takové naleznete na webu [kartografie.fsv.cvut.cz](http://kartografie.fsv.cvut.cz/)"
 
-Při zpracování plánu využijte vhodných dat, např. OpenStreetMap, není nutné většinu polohopisu vektorizovat. Postup připojení dat OSM do OCADu byl vykládán na cvičení. Je třeba použít 64bitový OCAD z důvodu kompatibility s ODBC databázovým rozhraním. Pro ergonomičtější práci v softwaru doporučuji vypnout kontextové menu (v *Options* \> *OCAD Preferences* hned první zaškrtávátko, dále lze v sekci *Select* nastavit jen objekty zcela uvnitř výběru). 
+Při zpracování plánu využijte vhodných dat, např. OpenStreetMap, není nutné většinu polohopisu vektorizovat. Jako vhodné se jeví tzv. *zrcadlo OSM* na webu [download.geofabrik.de](http://download.geofabrik.de/), kde je možné stáhnout data OSM za jednotlivé země ve formátu SHP.
 
-V krátkosti další postup možného zpracování úlohy pro ty, kteří nestihnou výklad na cvičení:
+Postup připojení dat OSM do OCADu je vykládán na cvičení. Nejprve je ale vhodné data předpřipravit pomocí ArcGIS. Zejména upravit data OSM (např. pomocí *Clip*) na vhodný rozsah (o trochu více než požadované 2×2 km – pozor, abyste nepracovali v systému Web Mercator, kde platí zkreslení délek a ploch); dále převést do metrického souř. systému (ideálně ne S-JTSK, lépe např. UTM – *EPSG:32633* nebo ETRS89 – *EPSG:3045*).
 
--   upravit data OSM (např. v ArcGIS) na vhodný rozsah (o trochu více než požadované 2×2 km – pozor, abyste nepracovali v systému Web Mercator, kde platí zkreslení délek a ploch), převést do metrického souř. systému (ideálně ne S-JTSK, lépe např. UTM);
--   jednotlivě připojovat SHP soubory ze zrcadla OSM do OCAD a nastavit symboliku (doporučené pořadí – plochy a linie první, např. *Railways*, *Roads*, *Landuse*, *Waterways*, *Water_A*, později i budovy a bodové prvky – *Buildings*, *Pois* atd.);
--   pro import použijte *File \> Import*, vyberte příslušný SHP, databázový typ je *MS Access 2010*, primární klíč *osmid*, layer information na *do not import* a spusťte import;
+!!! warning "32/64bitová verze OCAD"
+    Je třeba použít 64bitový OCAD z důvodu kompatibility s ODBC databázovým rozhraním (v opačném případě bude aplikace hlásit při pokusu zobrazit databázové záznamy chybu).
+
+!!! tip "Tipy pro ergonomičtější práci v softwaru" 
+    Doporučuji vypnout kontextové menu (v *Options* \> *OCAD Preferences* hned první zaškrtávátko, dále lze v sekci *Select* nastavit jen objekty zcela uvnitř výběru). 
+
+Další postup možného zpracování úlohy pro ty, kteří nestihnou výklad na cvičení:
+
+-   jednotlivě – postupně – připojujte SHP soubory ze zrcadla OSM do OCAD a nastavte symboliku (doporučené pořadí – linie/plochy první, např. *Railways*, *Roads*, *Landuse*, *Waterways*, *Water_A*, později i budovy a bodové prvky – *Buildings*, *Pois* atd.);
+-   pro import použijte *File \> Import*, vyberte příslušný SHP, databázový typ je *MS Access 2010*, primární klíč *osmid*, layer information nastavte na *do not import* a spusťte import;
+-   takto importované prvky jsou červené (resp. zobrazené výchozí barvou, jež se dá nastavit v *Preferences > Symbol*) a zobrazují se *nad* všemi ostatními symboly;
+
+    !!! note "Vrstvy OSM ve stažených datech"
+    
+<div class="table_headerless table_small_padding table_centered" markdown>
+|   |   |
+| - | - |
+| **RAILWAYS** | železnice a jiné dráhy |
+| **ROADS**   | silnice, cesty |
+| **WATERWAYS**   | vodní toky |   
+| **WATER_A**   | vodní plochy, vodní toky plochou  |  
+| **BUILDINGS_A**   | budovy a objekty charakteru budov |  
+| **POIS**   | body zájmu (*POI*) – bodové (úřady, služby, ubytování apod.) |  
+| **POIS_A**   | body zájmu (*POI*) – plošné (hřiště, sportoviště, hřbitov apod.) |  
+| **POFW**   | sakrální památky (*places of worship*) – bodové |  
+| **POFW_A**   | sakrální památky (*places of worship*) – plošné |    
+| **LANDUSE_A**   | plochy využití území a kultur pozemků (mimo vodních ploch, včetně účelových areálů) |  
+| **NATURAL**   | prvky vztahující se k přírodním jevům – bodové (prameny, jeskyně, vrcholy apod.) |  
+| **NATURAL_A**   | prvky vztahující se k přírodním jevům – plošné (doly, pláže apod.) |   
+| **TRANSPORT**   | prvky dopravní infrastruktury – bodové |  
+| **TRANSPORT_A**   | prvky dopravní infrastruktury – plošné (areály stanic a nádraží apod.) |  
+| **TRAFFIC**   | prvky vztahující se k přepravě – bodové (radary, závory apod.) |  
+| **TRAFFIC_A**   | prvky vztahující se k přepravě – plošné (parkoviště, čerpací stanice apod.) |  
+| **PLACES**   | geografické názvy |  
+</div> 
+
 -   vyrobte si liniový symbol dostatečně široký (1–2 mm) pro mapový rám a vyznačte zájmovou oblast 2×2 km;
--   pro symbolizování vrstev je vhodné využít atribut FCLASS (v prostředí OCAD výběr pomocí SQL Query,  např. <br />`[FCLASS] IN ('residential', 'living_street')` vybere všechny běžné ulice v rezidenční zástavbě, <br />`[FCLASS] = 'secondary'` vybere silnice II. tříd apod.; u budov je namísto *FCLASS* použit *TYPE*;
+-   pro symbolizování vrstev je vhodné využít atribut FCLASS (v prostředí OCAD můžete využít, že prvky mají atributy převzaté ze SHP a přistupovat k nim pomocí SQL Query,  např. <br />`[FCLASS] IN ('residential', 'living_street')` vybere všechny běžné ulice v rezidenční zástavbě, <br />`[FCLASS] = 'secondary'` vybere silnice II. tříd apod.; u budov je namísto *FCLASS* použit *TYPE*;
 -   strukturu OpenStreetMap můžete pročíst v [OSM Wiki](https://wiki.openstreetmap.org/wiki/Main_Page);
 -   nezapomeňte vytvořit bodové symboly pro body zájmu (úřad, hotel, divadlo, policie apod.) a odlišit budovy 'veřejné' od 'obyčejných';
 -   před aplikací popisů nezapomeňte, aby ulice a další popisované prvky měly dostatečnou šíři a aby použité fonty měly dostatečnou
@@ -227,12 +260,18 @@ V krátkosti další postup možného zpracování úlohy pro ty, kteří nestih
 -   popis ulic můžete vyrobit pomocí funkce *Database* \> *Add text from Database records*: vyberte dataset ulic, text field je *NAME*, podmínka dle požadované symbolizace, např. `[FCLASS] = 'secondary'`, vyberte příslušný symbol s požadovaným textem (lze využít/upravit symboly předdefinované s písmenem S v ikoně), nezapomeňte změnit
     *Replace* na *Add new objects*, jinak vám písma nahradí kresbu ulic;
 -   písma je možno upravit, aby byly zarovnané na linii středem, nikoli patkou (v nastavení symbolu sekce *Paragraph \> Alignment*);
--   doplňte popisy i k objektům mimo ulice a náměstí (POI, areály, městské čtvrtě, řeka, žel. stanice apod.);
--   ořežte kresbu mimo mapový rám např. pomocí *Object \> Crop objects* nebo ručně, příp. vymaskujte polygony bílé barvy;
--   doplňte kompoziční řešení (např. dle zaslaných příkladových map), tedy název mapy, měřtko, tiráž a legendu;
--   legendu lze vygenerovat pomocí *Layout \> Add map legend*, nagenerují se buď všechny symboly nebo jen ty, které jsou v mapě použité (lze zvolit), pro popis položek se přebírají názvy symbolů, které je vhodné před generováním legendy upravit (česky, v jednotném čísle, s malým prvním písmenem, dostatečně konkrétně); chcete-li vygenerovat legendu jen pro určité symboly, lze je v okně se symboly označit, pak vybrat pravým tl. *Select \> Invert*, čímž se vybere zbytek, a volbou *Hide* nastavit skrytí; v dialogu tvorby legendy se pak odškrtne hodnota *Also show hidden symbols* a legenda se vygeneruje jen pro Vámi vybranou sadu symbolů;
--   nezapomeňte na vhodnou hierarchizaci legendy (tematické prvky do popředí, prvky podobých kategorií k sobě).
+-   doplňte popisy i k objektům mimo ulice a náměstí (POI, areály, městské čtvrtě, řeka, žel. stanice apod.).
 
+### DOKONČOVACÍ PRÁCE
+
+**Ořežte kresbu** mimo mapový rám. Jsou dvě možnosti – první z nich je pomocí funkce *Object* > *Crop objects* 
+
+
+
+např. pomocí *Object \> Crop objects* nebo ručně, příp. vymaskujte polygony bílé barvy;
+-   doplňte kompoziční řešení (např. dle zaslaných příkladových map), tedy název mapy, měřítko, tiráž a legendu;
+-   legendu lze vygenerovat pomocí *Layout \> Add map legend*, nagenerují se buď všechny symboly nebo jen ty, které jsou v mapě použité (lze zvolit), pro popis položek se přebírají náz2vy symbolů, které je vhodné před generováním legendy upravit (česky, v jednotném čísle, s malým prvním písmenem, dostatečně konkrétně); chcete-li vygenerovat legendu jen pro určité symboly, lze je v okně se symboly označit, pak vybrat pravým tl. *Select \> Invert*, čímž se vybere zbytek, a volbou *Hide* nastavit skrytí; v dialogu tvorby legendy se pak odškrtne hodnota *Also show hidden symbols* a legenda se vygeneruje jen pro Vámi vybranou sadu symbolů;
+-   nezapomeňte na vhodnou hierarchizaci legendy (tematické prvky do popředí, prvky podobých kategorií k sobě).
 
 
 !!! warning "K odevzdání"
