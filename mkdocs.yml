@@ -9,7 +9,7 @@ nav:
       
   - Data: data.md
   - Kartogram: kartogram.md
-  - <!--Kartodiagram-->: kartodiagram.md
+  - Kartodiagram: kartodiagram.md
   - Klasifikace dat: klasifikace.md
   - Popis prvků: popisy.md
   - Layout: layout.md
