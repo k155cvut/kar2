@@ -1,19 +1,29 @@
 # Kartogram
-Podstatou kartogramu (*choropleth map*) je znázornění jevu vyjádřeného *relativními* hodnotami, zachyceného za dílčí územní celky. Pro správné srovnání je klíčové, aby data byla *relativní*, tj. v ideálním případě přepočtená na plochu územní jednotky (tzv. pravý kartogram), akceptovatelné je i přepočítání s využitím jiné charakteristiky územní jednotky, např. na počet obyvatel (tzv. nepravý kartogram). Častou a zásadní chybou je použití této kartografické vyjadřovací metody na absolutní data. (Lysák, 2014)
+Podstatou **kartogramu** (*choropleth map*) je znázornění jevu vyjádřeného **relativními hodnotami**, zachyceného za dílčí územní celky. Pro správné srovnání je klíčové, aby data byla **relativní**, tj. v ideálním případě přepočtená na plochu územní jednotky (tzv. **pravý kartogram**), akceptovatelné je i přepočítání s využitím jiné charakteristiky územní jednotky, např. na počet obyvatel (tzv. **nepravý kartogram**). Častou a zásadní chybou je použití této kartografické vyjadřovací metody na absolutní data. *(Lysák, 2014)*
 
+**Další zdroje:**
+{: align=center }
+
+[<span>GISKA</span><br>Kartogramy a pseudokartogramy](http://giska.cz/kartografie/kartogramy-a-pseudokartogramy/){ .md-button .md-button--primary .server_name .external_link_icon_small target="\_blank"}
+[<span>Jaroš a Lysák (2014)</span><br>Kartogram](https://drive.google.com/file/d/16PnDgYr6c1LGUuMTF45a0hFPHyf7rrLm/view){ .md-button .md-button--primary .server_name .external_link_icon_small target="\_blank"}
+[<span>Pravda (2004)</span><br>O aplikáciách kartogramovej metódy](https://www.sav.sk/journals/uploads/05131247Pravda.pdf){ .md-button .md-button--primary .server_name .external_link_icon_small target="\_blank"}
+{: .button_array}
+
+## Základní pojmy
 ### Základní dělení kartogramů
-1.  *Jednoduchý kartogram* 
-    1.  *Homogenní kartogram* zobrazuje pouze jeden relativní jev, a to změnou barvy nebo rastru
-    2.  *Kvalifikační kartogram* znázorňuje rozdíl jevu od zvolené střední hodnoty S (např. průměr, medián, směrodatná odchylka, nula/, nulová změna, ...). Pro oblasti s hodnotou jevu větší než S se volí odstíny barvy opačného charakteru než pro jevy s hodnotu menší než S. 
-2.  *Složený kartogram* zobrazuje hodnoty dvou nebo více jevů, umožňuje jejich vzájemné srovnání, typicky je jeden jev vyjádřen barvou, druhý rastrem
+1.  ***Jednoduchý kartogram***
+    1.  ***Homogenní kartogram*** zobrazuje pouze jeden relativní jev, a to změnou barvy nebo rastru
+    2.  ***Kvalifikační kartogram*** znázorňuje rozdíl jevu od zvolené střední hodnoty S (např. průměr, medián, směrodatná odchylka, nula/, nulová změna, ...). Pro oblasti s hodnotou jevu větší než S se volí odstíny barvy opačného charakteru než pro jevy s hodnotu menší než S. 
+2.  ***Složený kartogram*** zobrazuje hodnoty dvou nebo více jevů, umožňuje jejich vzájemné srovnání, typicky je jeden jev vyjádřen barvou, druhý rastrem
 
-Tvorba kartogramu zahrnuje tři hlavní úkoly:
+### Obecný postup tvorby kartogramu
 
-1.  Tvorba intervalové stupnice, resp. klasifikace vstupních dat do intervalů.
-2.  Grafické řešení jejich znázornění v mapě (obvykle pomocí barevné stupnice či rastru).
-3.  Návrh správné legendy.
+0.  Příprava dat *(např. přepočet absolutních dat na plochu územní jednotky či počet obyvatel)*
+1.  Rozdělení vstupních dat do intervalů *(viz [Klasifikace dat](../klasifikace))*
+2.  Vizualizace dat v mapě *(např. s využitím [barevné či rastrové stupnice](../kartogram/#graficka-podoba-stupnic))*
+3.  Konstrukce legendy
 
-### Grafický návrh znázornění intervalů v mapě
+### Grafická podoba stupnic
 
 #### Barevné stupnice
 Při výběru nebo tvorbě barevných stupnic pro tematické mapy jsou klíčová data, která mapa zobrazuje: barevné schéma by mělo odpovídat povaze dat. Barevná schémata v kartografii v základu rozdělujeme na binární, kvalitativní, sekvenční (unipolární) a divergentní (bipolární) viz schéma níže. Pro složitější data (s kombinací více proměnných) vytváříme složitější kombinovaná barevná schémata. (Miklín, 2017)
@@ -36,6 +46,10 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
   ![Rastrové stupnice](../assets/Uloha3/rastry.png "Rastrové stupnice"){ width=200px }
   <figcaption>Nejjednodušší řešení rastru pro kartogram (Kaňok, Voženílek, 2011)</figcaption>
 </figure>
+
+<br>
+
+## Tvorba kartogramu v ArcGIS Pro
 
 !!! note "Jednoduchý kartogram v ArcGIS Pro"
 
@@ -81,7 +95,7 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
 
     ???+ tip "Uložení vlastního symbolu"
         - pro usnadnění práce je vhodné symbol se základním nastavením uložit do stylu *(horní menu-Save symbol to style)* a následně jej aplikovat pro všechny ostatní intervaly (v *Symbology-Classes* zvolte *More-Format all symbols*, poté příslušný symbol vyberte z galerie symbolů *(Gallery)*)
-        - u dalších interval již postačí nastavit jen vhodnou hodnotu tloušťku linii *(Line width)* či jejich rozestupu *(Separation)* tak, aby s narůstající intenzitou jevu narůstala hustota rastru (v závislosti na zvoleném způsobu vykreslení rastru)
+        - u dalších intervalů již postačí nastavit jen vhodnou hodnotu tloušťku linii *(Line width)* či jejich rozestupu *(Separation)* tak, aby s narůstající intenzitou jevu narůstala hustota rastru (v závislosti na zvoleném způsobu vykreslení rastru)
     ???+ tip "Vícesměrný rastr"    
         - narůstající hustotu můžeme vyjádřit i s využitím vícesměrného rastru (dva na sebe kolmé jednosměrné rastry)
         - ve vlastnostech symbolu *(Properties-Structure)* duplikujeme vrstvu výplně symbolu, pro kterou v části *(Properties-Layers)* nastavíme hodnotu rozestupu *(Separation)* tak, aby na sebe oba jednosměrně rastry byly kolmé (nejčastěji volíme sklonitost 45° a 135°)
@@ -89,3 +103,11 @@ Nejřidší šrafování odopvídá nejnižší intenzitě jevu, nejhustší pak
         ![Přidání vrstvy symbolu](../assets/Uloha3/kartogram_rastr_symbol_structure.png "Přidání vrstvy symbolu"){ width=150px }
         <figcaption>Přidání vrstvy symbolu</figcaption>
         </figure>
+
+## Použité zdroje
+
+- Bláha, J, D.: Vybrané okruhy z geografické kartografie. Ústí nad Labem: UJEP, 2017. ISBN: 978-80-7561-092-8.
+- Jaroš, J., Lysák, J.: Kartogram. In: Moderní geoinformační metody ve výuce GIS, 2014. Dostupné z: [https://drive.google.com/file/d/16PnDgYr6c1LGUuMTF45a0hFPHyf7rrLm/view](https://drive.google.com/file/d/16PnDgYr6c1LGUuMTF45a0hFPHyf7rrLm/view)
+- Miklín, J., R. Dušek, L. Krtička a O. Kaláb: Tvorba map. Ostrava: Ostravská univerzita, 2018. ISBN: 978-80-7599-017-4. Dostupné z: [https://tvorbamap.osu.cz/ke-stazeni/](https://tvorbamap.osu.cz/ke-stazeni/) 
+- Voženílek, V. a kol.: Metody tematické kartografie – vizualizace prostorových jevů. Olomouc: Univerzita Palackého, 2011. ISBN: 978-80-244-2790-4.
+- GISKA – GIS a kartografie…: Kartografie [online]. Dostupné z: [http://giska.cz/kartografie/](http://giska.cz/kartografie/) [cit. 14. 11. 2025].
