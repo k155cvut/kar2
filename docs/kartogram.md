@@ -60,27 +60,34 @@ Nejběžnějším způsobem vyjádřením kvantity rastrem je šrafování, př�
 Nejřidší šrafování odpovídá nejnižší intenzitě jevu, nejhustší pak nejvyšší.
 
 <figure markdown>
-  ![Rastrové stupnice](../assets/Uloha3/rastry.png "Rastrové stupnice"){ width=200px }
+  ![Rastrové stupnice](../assets/Uloha3/rastry.png "Nejjednodušší řešení rastru pro kartogram (Kaňok, Voženílek, 2011)"){ width=150px }
   <figcaption>Nejjednodušší řešení rastru pro kartogram (Kaňok, Voženílek, 2011)</figcaption>
 </figure>
 
 Pro vyjádření narůstající intenzity jevu lze využít také odlišný směr linií. Nejvyšší kategorie intenzity jevu se pak obvykle znázorňují pomocí složeného/vícesměrného rastru. Z důvodu jednotnosti rastru zachování kolmosti linií u složeného rastru je u šikmých linií vhodné použít sklon ± 45°.
 
 <figure markdown>
-  ![Rastrové stupnice](../assets/Uloha3/rastry_smery0.png "Doporučené pořadí směru linií pro vyjádření intenzity jevu dle Voženílka (2001). Intenzita narůstá zleva doprava."){ width=800px }
+  ![Rastrové stupnice](../assets/Uloha3/rastry_smery0.png "Doporučené pořadí směru linií pro vyjádření intenzity jevu dle Voženílka (2001). Intenzita narůstá zleva doprava."){ width=600px }
   <figcaption>Doporučené pořadí směru linií pro vyjádření intenzity jevu dle Voženílka (2001). Intenzita narůstá zleva doprava.</figcaption>
 </figure>
 
 Názornost výše uvedeného způsobu pro uživatele mapy je však velmi diskutabilní. V praxi je proto vhodné změnu směru linií kombinovat se změnou jiného (pro uživatele mapy názornějšího) parametru linie, jako je např. rozestup linií či tloušťka linie.
 
 <figure markdown>
-  ![Rastrové stupnice](../assets/Uloha3/rastry_smery2.png "Příklad využití změny směru linií v kombinaci se změnou tloušťky linií (Jaroš a Lysák, 2014)"){ width=800px }
+  ![Rastrové stupnice](../assets/Uloha3/rastry_smery2.png "Příklad využití změny směru linií v kombinaci se změnou tloušťky linií (Jaroš a Lysák, 2014)"){ width=600px }
   <figcaption>Příklad využití změny směru linií v kombinaci se změnou loušťky linií (Jaroš a Lysák, 2014)</figcaption>
 </figure>
 
 <figure markdown>
-  ![Rastrové stupnice](../assets/Uloha3/rastry_smery1.png "Příklad využití změny směru linií v kombinaci se změnou rozestupu linií (Jaroš a Lysák, 2014)"){ width=200px }
+  ![Rastrové stupnice](../assets/Uloha3/rastry_smery1.png "Příklad využití změny směru linií v kombinaci se změnou rozestupu linií (Jaroš a Lysák, 2014)"){ width=150px }
   <figcaption>Příklad využití změny směru linií v kombinaci se změnou rozestupu linií (Jaroš a Lysák, 2014)</figcaption>
+</figure>
+
+V kartografické praxi se lze také setkat s rastrovou stupnicí, jež kombinuje jednoduchý/jednosměrný a složený/vícesměrný rastr s proměnným rozestupem linií, u nichž je zachován jednotný směr linií. Pro první interval je možné rastrovou výplň zcela vynechat.
+
+<figure markdown>
+  ![Rastrové stupnice](../assets/Uloha3/rastry_smery3.png "Příklad využití kombinace jednoduchého a složeného rastru s proměnným rozestupem linií, u nichž je zachován jednotný směr linií. (Český historický atlas, 2020)"){ width=300px }
+  <figcaption>Příklad využití kombinace jednoduchého a složeného rastru s proměnným rozestupem linií, u nichž je zachován jednotný směr linií (Český historický atlas, 2020)</figcaption>
 </figure>
 
 <br>
@@ -175,9 +182,9 @@ Názornost výše uvedeného způsobu pro uživatele mapy je však velmi diskuta
     ???+ tip "Uložení vlastního symbolu"
         - pro usnadnění práce je vhodné symbol se základním nastavením uložit do stylu *(horní menu-Save symbol to style)* a následně jej aplikovat pro všechny ostatní intervaly (v *Symbology-Classes* zvolte *More-Format all symbols*, poté příslušný symbol vyberte z galerie symbolů *(Gallery)*)
         - u dalších intervalů již postačí nastavit jen vhodnou hodnotu tloušťku linii *(Line width)* či jejich rozestupu *(Separation)* tak, aby s narůstající intenzitou jevu narůstala hustota rastru (v závislosti na zvoleném způsobu vykreslení rastru)
-    ???+ tip "Vícesměrný rastr"    
-        - narůstající hustotu můžeme vyjádřit i s využitím vícesměrného rastru (dva na sebe kolmé jednosměrné rastry)
-        - ve vlastnostech symbolu *(Properties-Structure)* duplikujeme vrstvu výplně symbolu, pro kterou v části *(Properties-Layers)* nastavíme hodnotu rozestupu *(Separation)* tak, aby na sebe oba jednosměrně rastry byly kolmé (nejčastěji volíme sklonitost 45° a 135°)
+    ???+ tip "Složený/Vícesměrný rastr"    
+        - narůstající hustotu můžeme vyjádřit i s využitím složeného/vícesměrného rastru (dva na sebe kolmé jednoduché/jednosměrné rastry)
+        - ve vlastnostech symbolu *(Properties-Structure)* duplikujeme vrstvu výplně symbolu, pro kterou v části *(Properties-Layers)* nastavíme hodnotu rozestupu *(Separation)* tak, aby na sebe oba jednoduché/jednosměrné rastry byly kolmé (nejčastěji volíme sklonitost 45° a 135°)
         <figure markdown>
         ![Přidání vrstvy symbolu](../assets/Uloha3/kartogram_rastr_symbol_structure.png "Přidání vrstvy symbolu"){ width=150px }
         <figcaption>Přidání vrstvy symbolu</figcaption>

@@ -67,11 +67,19 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 Povinným výstupem úlohy je __technická zpráva v elektronické podobě__ odevzdaná v termínu prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=399426){.color_def .underlined_dotted .external_link_icon target="_blank"}.
 
 ???+ note-grey "Požadované náležitosti technické zprávy"
-    -   vybrané statistiky o území *(počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)*,
-    -   srovnání klasifikačních metod (min. 4) *(Která metoda je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen histogramu a vizualizace dat.)*,
-    -   zhodnocení použitých forem jednoduchého kartogramu: homogenní vs. klasifikační *(Který způsob je dle Vás vhodnější a proč? Uveďte jeho výhody/nevýhody.)*,
-    -   zhodnocení použitých forem složeného kartogramu: 1) barva+rastr *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Srovnejte: linie vs. tečky; hustota vs. velikost/tloušťka symbolu; přiložte printscreen všech 4 způsobů)*; 2) barva+rastr vs. barva+barva *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Který se lépe hodí pro kombinaci s kartodiagramem?)*,
-    -   povinnou přílohou jsou **všechny vytvořené tematické mapy na formát A3** *(prosíme sloučit všechny mapy k TZ do jednoho PDF!)*;
+    -   **vybrané statistiky o území** *(počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)*,
+    -   **srovnání klasifikačních metod (min. 4)** *(Která metoda je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen histogramu a vizualizace dat.)*,
+    -   **srovnání použitých forem jednoduchého kartogramu:**
+    
+        - ***homogenní vs. klasifikační*** *(Který způsob je dle Vás vhodnější a proč? Uveďte jeho výhody/nevýhody.)*,
+    -   **srovnání různých forem rastrových stupnic ve složeném kartogramu (min. 3):**
+    
+        - ***jednoduchý liniový vs. jednoduchý tečkový vs. jednoduchý + složeného liniový rastr*** *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Přiložte printscreen všech 3 způsobů. Z prezentovaných způsobů jednoduchého liniového/tečkového rastru zvolte vždy pouze jeden, tj. buď s proměnným rozestupem linií/teček, nebo s proměnnou velikostí/tloušťkou symbolu.)*,
+    -   **srovnání použitých forem složeného kartogramu:** 
+    
+    
+        - ***barva+rastr vs. barva+barva*** *(Který způsob je dle Vás vhodnější a proč? Uveďte jejich výhody/nevýhody. Který se lépe hodí pro kombinaci s kartodiagramem?)*,
+    -   **povinnou přílohou jsou všechny vytvořené tematické mapy na formát A3** *(prosíme sloučit všechny mapy k TZ do jednoho PDF!)*;
 
 ## Hodnocení
 Úloha je uznána (stav splněno/nesplněno), pokud jsou splněny následující podmínky:
