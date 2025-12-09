@@ -251,6 +251,56 @@ Další postup možného zpracování úlohy pro ty, kteří nestihnou výklad n
 | **PLACES**   | geografické názvy |  
 </div> 
 
+!!! note "Výklad k významným hodnotám atributu *fclass*"
+    
+<div class="table_headerless table_small_padding table_centered" markdown>
+|   |   |
+| - | - |
+| **ROADS** |    |
+| motorway | dálnice, rychlostní silnice |
+| trunk  | rychlostní silnice, průtah městem |
+| primary | silnice I. třídy |   
+| secondary | silnice II. třídy | 
+| tertiary | silnice III. třídy | 
+| residential | běžné ulice v zástavbě | 
+| living_street | běžné ulice, obytné zóny | 
+| service | účelové komunikace do areálů | 
+| footway | chodník | 
+| cycleway, bridleway | cyklostezka, hipostezka | 
+| track | zpevněné cesty | 
+| track_grade# | různé kategorie polních/lesních cest (lze sloučit) | 
+| path, unclassified | cesta/silnice bez rozlišení | 
+| steps | schodiště | 
+|  |  |
+| **BUILDINGS**   | zde namísto *fclass* použit atribut *type*; význam mnoha kategorií je přímo zřejmý |  
+| house, residential, <Null> | běžné budovy | 
+| industrial, warehouse, service | průmyslová budova | 
+| school | škola | 
+| church | kostel, sakrální památka | 
+| garage, garages | garáž | 
+| commercial, retail | budovy v obchodních zónách | 
+| civic, public | veřejné budovy | 
+| barn, shed, farm_auxiliary | zemědělské budovy | 
+|  |  |
+| **LANDUSE_A**   |  |  
+| residential | 'soukromé' plochy (zahrady aj.) | 
+| allotments | zahrádky (lze sloučit s *residential*) | 
+| forest | les | 
+| park | park | 
+| industrial | průmyslové oblasti | 
+| commercial | obchodní zóny (lze sloučit s *industrial*) | 
+| orchard | sad | 
+| recreation_ground | hřiště | 
+| cemetery | hřbitov | 
+| scrub, meadow, grass, farmland, farmyard | orná půda a ostatní plochy (lze zahodit) | 
+| vineyard | vinice | 
+|  |  |
+| **POIS**  | význam většiny kategorií je zřejmý |  
+| restaurant, memorial, pharmacy, police, supermarket, library apod. | objekty vhodné pro bodovou vizualizaci | 
+| bench, waste_basket, recycling_xxxx, post_box, vending_any, drinking_water a další | objekty z hlediska měřítka mapy nevýznamné, vyřadit |  
+</div> 
+
+
 -   vyrobte si liniový symbol dostatečně široký (1–2 mm) pro mapový rám a vyznačte zájmovou oblast 2×2 km;
 -   pro symbolizování vrstev je vhodné využít atribut FCLASS (v prostředí OCAD můžete využít, že prvky mají atributy převzaté ze SHP a přistupovat k nim pomocí SQL Query,  např. <br />`[FCLASS] IN ('residential', 'living_street')` vybere všechny běžné ulice v rezidenční zástavbě, <br />`[FCLASS] = 'secondary'` vybere silnice II. tříd apod.; u budov je namísto *FCLASS* použit *TYPE*;
 -   strukturu OpenStreetMap můžete pročíst v [OSM Wiki](https://wiki.openstreetmap.org/wiki/Main_Page);
