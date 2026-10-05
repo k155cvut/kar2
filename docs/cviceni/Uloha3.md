@@ -56,7 +56,7 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 
 **Zdroje dat**
 
--   polygonová vrstva obcí a ORP z ArcČR 4.3 (dostupné na Shares\\K155\\Public\\data\\ArcGIS)
+-   polygonová vrstva obcí a ORP z ArcČR 4.1 (dostupné na Shares\\K155\\Public\\data\\ArcGIS)
 
 **Postup zpracování**
 
