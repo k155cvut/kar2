@@ -1,4 +1,4 @@
-# Úloha 2 – Plán města v kartografickém software OCAD
+# Úloha 3 – Plán města v kartografickém software OCAD
 
 ## Zadání
 

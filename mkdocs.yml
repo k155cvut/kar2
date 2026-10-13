@@ -2,10 +2,10 @@ site_name: Kartografie 2 (155KAT2)
 nav:
   - Charakteristika předmětu: index.md
   - Cvičení – úlohy:
-      - I. Maloměřítková přehledná mapa: cviceni/Uloha1.md
-      - II. Plán města v kartografickém software OCAD: cviceni/Uloha2.md
-      - III. Metody tematické kartografie – kartogram, kartodiagram: cviceni/Uloha3.md
-      - IV. Tvorba mapy z dat ZABAGED, generalizace dat: cviceni/Uloha4.md
+      - I. Maloměřítková přehledná mapa: cviceni/MalomeritkovaMapa.md
+      - II. Metody tematické kartografie – kartogram, kartodiagram: cviceni/MetodyTK.md
+      - III. Plán města v kartografickém software OCAD: cviceni/OCAD.md
+      - IV. Tvorba mapy z dat ZABAGED, generalizace dat: cviceni/ZABAGED.md
       
   - Data: data.md
   - Kartogram: kartogram.md
@@ -37,7 +37,7 @@ theme:
     annotation: material/plus-circle
   features:
     - navigation.tabs
-    # - navigation.tabs.sticky
+    - navigation.tabs.sticky
     - navigation.sections
     - toc.integrate
     - navigation.top

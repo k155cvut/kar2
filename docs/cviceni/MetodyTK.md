@@ -1,4 +1,4 @@
-# Úloha 3 – Metody tematické kartografie: kartogram, kartodiagram
+# Úloha 2 – Metody tematické kartografie: kartogram, kartodiagram
 
 ## Zadání
 
@@ -52,7 +52,7 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 
 **Jednotlivá zadání**
 
--   viz [**tabulka**](https://docs.google.com/spreadsheets/d/1x8FFegspPplLoEs1yxckCR0jmcm-UUKcbpNQnq7WeVA/edit?gid=1292987354#gid=1292987354){target="_blank"}
+-   viz [**tabulka**](https://docs.google.com/spreadsheets/d/10tCpuvOU3z9aBQjqGy9VL7YWd9QK2sOY8cJ99SAUdgg/){target="_blank"}
 
 **Zdroje dat**
 
@@ -64,7 +64,7 @@ V první části cvičení si vyzkoušíme dvě formy znázornění jednoduchéh
 -   [kartodiagram](https://k155cvut.github.io/kar2/kartodiagram/){target="_blank"} (Mapa 5)
 
 ## Výstupy cvičení
-Povinným výstupem úlohy je __technická zpráva v elektronické podobě__ odevzdaná v termínu prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=399426){.color_def .underlined_dotted .external_link_icon target="_blank"}.
+Povinným výstupem úlohy je __technická zpráva v elektronické podobě__ odevzdaná v termínu prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=476519){.color_def .underlined_dotted .external_link_icon target="_blank"}.
 
 ???+ note-grey "Požadované náležitosti technické zprávy"
     -   **vybrané statistiky o území** *(počet obcí, statistické ukazatele pro každý jev (průměr, medián, minimum, maximum) + název obce s danou hodnotou jevu)*,
@@ -88,11 +88,11 @@ Povinným výstupem úlohy je __technická zpráva v elektronické podobě__ ode
 -   splnění zásad tematické kartografie (viz [**povinná kritéria**](https://docs.google.com/spreadsheets/d/1x8FFegspPplLoEs1yxckCR0jmcm-UUKcbpNQnq7WeVA/edit?gid=0#gid=0){target="_blank"})
 
 !!! warning "Opravy"
-    V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=399426){.color_def .underlined_dotted .external_link_icon target="_blank"} vždy nejpozději do 7 dní od vrácení úlohy. Výstup lze odevzdat po __maximálně dvou opravách__, v případě pozdního odevzdání či nesprávného výstupu po druhé opravě je úloha __označena jako nesplněná__{style="color:#c22521;"}.
+    V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=476519){.color_def .underlined_dotted .external_link_icon target="_blank"} vždy nejpozději do 7 dní od vrácení úlohy. Výstup lze odevzdat po __maximálně dvou opravách__, v případě pozdního odevzdání či nesprávného výstupu po druhé opravě je úloha __označena jako nesplněná__{style="color:#c22521;"}.
 
 ## Termíny
 
-- odevzdání 1: __neděle 30. listopadu 2025__{.outlined}
-- odevzdání 2 (oprava 1): __středa 10. prosince 2025__{.outlined}
-- odevzdání 3 (oprava 2): __pátek 19. prosince 2025__{.outlined}
+- odevzdání 1: __neděle 8. listopadu 2026__{.outlined}
+- odevzdání 2 (oprava 1): __neděle 22. listopadu 2026__{.outlined}
+- odevzdání 3 (oprava 2): __neděle 6. prosince 2026__{.outlined}
 
