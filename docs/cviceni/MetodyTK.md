@@ -85,7 +85,7 @@ Povinným výstupem úlohy je __technická zpráva v elektronické podobě__ ode
 Úloha je uznána (stav splněno/nesplněno), pokud jsou splněny následující podmínky:
 
 -   úplnost technické zprávy (obsah TZ viz výše)
--   splnění zásad tematické kartografie (viz [**povinná kritéria**](https://docs.google.com/spreadsheets/d/1x8FFegspPplLoEs1yxckCR0jmcm-UUKcbpNQnq7WeVA/edit?gid=0#gid=0){target="_blank"})
+-   splnění zásad tematické kartografie (viz [**povinná kritéria**](https://docs.google.com/spreadsheets/d/10tCpuvOU3z9aBQjqGy9VL7YWd9QK2sOY8cJ99SAUdgg/edit?gid=493444886#gid=493444886){target="_blank"})
 
 !!! warning "Opravy"
     V případě, že odevzdaný výstup není správný, je vyučujícím prostřednictvím systému Moodle __vrácen k opravě__. Opravený výstup se odevzdává opět prostřednictvím systému [__Moodle__](https://moodle-vyuka.cvut.cz/mod/assign/view.php?id=476519){.color_def .underlined_dotted .external_link_icon target="_blank"} vždy nejpozději do 7 dní od vrácení úlohy. Výstup lze odevzdat po __maximálně dvou opravách__, v případě pozdního odevzdání či nesprávného výstupu po druhé opravě je úloha __označena jako nesplněná__{style="color:#c22521;"}.
