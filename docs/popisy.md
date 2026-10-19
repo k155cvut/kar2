@@ -79,7 +79,7 @@ Panel **Placement Properties** (dostupný v okně **Label Class**) nabízí deta
 
 
 <figure markdown>
-  ![Labeling](../assets/Popisy/layout_panely.png "Rozložení popisovacích funkcí v programu"){ width=800px }
+  ![Labeling](../assets/popisy/layout_panely.png "Rozložení popisovacích funkcí v programu"){ width=800px }
   <figcaption>Rozložení popisovacích funkcí v programu</figcaption>
 </figure>
 
