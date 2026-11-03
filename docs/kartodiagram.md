@@ -50,6 +50,14 @@ Pro tvorbu plynulé / funkční stupnice lze využít tyto nástroje:
     **pozn. toolbox byl odvozen z webového nástroje Value-scale generator pro potřeby předmětu 155KAT2*
 
 
+    <figure markdown>
+     ![Srovnání klasické podoby funkční / plynulé stupnice (vlevo) vs zjednodušené verze diagramového měřítka z ArcGIS (vpravo)](../assets/Uloha3/DiagramoveMeritko_plynule_srovnani.png "Srovnání klasické podoby funkční / plynulé stupnice (vlevo) vs zjednodušené verze diagramového měřítka z ArcGIS (vpravo)"){ width=600px }
+    <figcaption>Srovnání klasické podoby funkční / plynulé stupnice (vlevo) vs zjednodušené verze diagramového měřítka z ArcGIS (vpravo)</figcaption>
+    </figure>   
+
+
+
+
 ## Použité zdroje
 
 - Bláha, J, D.: Vybrané okruhy z geografické kartografie. Ústí nad Labem: UJEP, 2017. ISBN: 978-80-7561-092-8.
